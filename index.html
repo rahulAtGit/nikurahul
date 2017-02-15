@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html ng-app="parallax">
+    <head>
+        <meta charset="utf-8">
+        <title>Random shit</title>
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body ng-controller="mainctrl" scroll ng-cloak>
+        <div id="front-page" ng-hide="showbanner==true">
+            <h1 id="opening-text">{{messages[0][0]}}</h1>
+            <a href="#our-story"><img id="scroll-right" ng-click="makeshowbanner()" class="" src="./resources/next.svg" alt="You"></a>
+        </div>
+        <div id="our-story">
+            <div id="top-banner" ng-show="showbanner==true">
+                <img id="me" class="she" ng-hide="showus==true" src="./resources/girl-walking.svg" alt="You">
+                <img id="her" class="she" ng-hide="showus==true" src="./resources/backpacker-running.svg" alt="You">
+                <img id="us" class="she" ng-hide="showus==false" src="./resources/dance.svg" alt="You">
+            </div>
+            <div id="flow-content">
+                <div id="start">
+                    <div class="moment">
+                        <img id="" class="she" src="./resources/classroom.svg" alt="You">
+                    </div>
+                    <div class="title">
+                        {{messages[1][0]}}
+                    </div>
+                </div>
+                <hr class="horizontal-separator">
+                <div>
+                    <div class="moment">
+                        <h4 class="message-box message-box-center">{{messages[2][0]}}</h4>
+                        <h4 class="message-box message-box-center">{{messages[2][1]}}</h4>
+                        <h4 class="message-box message-box-center">{{messages[2][2]}}</h4>
+                    </div>
+                    <div class="title">
+                        {{messages[2][4]}}
+                    </div>
+                </div>
+                <hr class="horizontal-separator">
+                <div>
+                    <div class="moment">
+                        <img id="" class="she" src="./resources/woman-with-briefcase.svg" alt="You">
+                    </div>
+                    <div class="title">
+                        {{messages[3][0]}}
+                    </div>
+                </div>
+                <hr class="horizontal-separator">
+                <div>
+                    <div class="moment">
+                        <img id="" class="she" src="./resources/notebook.svg" alt="You">
+                    </div>
+                    <div class="title">
+                        {{messages[4][0]}}
+                    </div>
+                </div>
+                <hr class="horizontal-separator">
+                <div>
+                    <div class="moment">
+                        <img id="" class="she" src="./resources/time-left.svg" alt="You">
+                    </div>
+                    <div class="title">
+                        {{messages[5][0]}}
+                    </div>
+                </div>
+                <hr class="horizontal-separator">
+                <div>
+                  <div class="moment">
+                    <h1 class="message-box message-box-left">{{messages[6][0]}}</h1>
+                    <h1 class="message-box">{{messages[6][1]}}</h1>
+                    <h1 class="message-box message-box-left">{{messages[6][2]}}</h1>
+                </div>
+                <div class="title">
+                    {{messages[6][3]}}
+                </div>
+                </div>
+                <hr class="horizontal-separator">
+                <div>
+                  <div class="moment">
+                    <h1 class="message-box message-box-left">{{messages[7][0]}}</h1>
+                    <h1 class="message-box">{{messages[7][1]}}</h1>
+                    <h1 class="message-box message-box-left">{{messages[7][2]}}</h1>
+                    <h1 class="message-box">{{messages[7][3]}}</h1>
+                </div>
+                <div class="title">
+                    {{messages[7][4]}}
+                </div>
+                </div>
+                <hr class="horizontal-separator">
+                <div>
+                    <div class="moment">
+                        <img id="" class="she" src="./resources/chocolate.svg" alt="You">
+                    </div>
+                    <div class="title">
+                        {{messages[8][0]}}
+                    </div>
+                </div>
+                <hr class="horizontal-separator">
+                <div>
+                  <div class="moment">
+                    <h1 class="message-box message-box-left">{{messages[9][0]}}</h1>
+                    <h1 class="message-box">{{messages[9][1]}}</h1>
+                    <h1 class="message-box message-box-left">{{messages[9][2]}}</h1>
+                    <h1 class="message-box">{{messages[9][3]}}</h1>
+                </div>
+                <div class="title">
+                    {{messages[9][4]}}
+                </div>
+                </div>
+                <hr class="horizontal-separator">
+                <div id="end">
+                    <div class="moment">
+                        <img id="" class="she" src="./resources/kiss.svg" alt="You">
+                    </div>
+                    <div class="title">
+                        {{messages[10][0]}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./scripts/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./scripts/angular.min.js"></script>
+        <script type="text/javascript" src="./scripts/index.js"></script>
+    </body>
+</html>

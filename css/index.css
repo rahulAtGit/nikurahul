@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  background-color: #0A0A0A;
+  color: #7CCBDA;
+  font-size: 16px;
+  text-align: center;
+  height: 100vh;
+  font-family: trade-gothic,sans-serif;
+  overflow-x: scroll;
+  width: auto;
+  white-space: nowrap; }
+  body * {
+    display: inline-block;
+    width: auto;
+    max-height: 100vh; }
+  body #front-page {
+    height: 100vh;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; }
+    body #front-page #opening-text {
+      margin-left: 10%;
+      width: 70%; }
+    body #front-page a {
+      width: 30%; }
+    body #front-page #scroll-right {
+      height: 9rem;
+      position: relative;
+      margin-bottom: -3.5rem;
+      cursor: pointer;
+      animation: blink 1s infinite; }
+  body #our-story {
+    height: 100vh;
+    position: relative;
+    min-width: 100%; }
+    body #our-story #top-banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 40vh;
+      width: 100vw; }
+      body #our-story #top-banner #me {
+        height: 100%;
+        position: absolute;
+        left: 0; }
+      body #our-story #top-banner #her {
+        height: 100%;
+        position: absolute;
+        right: 0; }
+      body #our-story #top-banner #us {
+        height: 100%;
+        position: absolute;
+        right: 545px; }
+    body #our-story #flow-content {
+      padding-left: 1rem;
+      position: absolute;
+      top: 40vh;
+      left: 0;
+      height: 60vh;
+      display: flex;
+      align-items: center; }
+      body #our-story #flow-content hr {
+        display: inline-block;
+        width: 20rem; }
+      body #our-story #flow-content .moment {
+        width: 25rem;
+        border: solid 0.3vw #7CCBDA;
+        position: relative;
+        vertical-align: middle; }
+        body #our-story #flow-content .moment img {
+          width: 48%;
+          margin: 2%; }
+      body #our-story #flow-content .title {
+        display: block;
+        margin-top: 0.5rem;
+        white-space: normal;
+        word-wrap: break-word;
+        width: 25rem; }
+      body #our-story #flow-content .message-box {
+        white-space: normal;
+        word-wrap: break-word;
+        display: block;
+        padding: 5px 10px;
+        margin: 20px 0px;
+        border: solid .05rem #7CCBDA;
+        border-radius: 6px;
+        color: #7CCBDA;
+        width: 80%;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: center;
+        position: relative;
+        right: -15%; }
+      body #our-story #flow-content .message-box-left {
+        position: relative;
+        left: 0; }
+      body #our-story #flow-content .message-box-center {
+        position: relative;
+        left: 7.5%; }
+
+.center-screen {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+h1 {
+  display: inline-block;
+  font-size: 4rem; }
+
+.first {
+  background-size: auto 350px;
+  background-position: left center;
+  background-image: url();
+  background-attachment: fixed;
+  height: 58rem;
+  background-repeat: no-repeat; }
+
+.second {
+  background-color: grey;
+  background-image: url(../resources/girl-walking.svg);
+  background-attachment: fixed;
+  height: 58rem;
+  background-repeat: no-repeat;
+  background-position: right center; }
+
+@keyframes blink {
+  25% {
+    height: 10rem; }
+  75% {
+    height: 8rem; } }
+
+.move-forward {
+  animation: forward 3s;
+  animation-fill-mode: forwards; }
+
+@keyframes forward {
+  0% {
+    left: 0; }
+  100% {
+    left: 500px;
+    opacity: 0.5; } }
+
+.move-backward {
+  animation: backward 3s;
+  animation-fill-mode: forwards; }
+
+@keyframes backward {
+  0% {
+    right: 0; }
+  100% {
+    right: 500px;
+    opacity: 0.5; } }
+
+.horizontal-separator {
+  width: 100%;
+  top: 0;
+  background-color: #327C7F;
+  position: relative;
+  height: 0.09vw;
+  display: block;
+  margin: 0.1vw;
+  border: none; }
+
+.horizontal-separator:before {
+  content: " ";
+  width: 1vw;
+  height: 1vw;
+  position: absolute;
+  border-radius: 50vw;
+  background-color: #327C7F;
+  left: 50%;
+  bottom: -0.5vw; }
